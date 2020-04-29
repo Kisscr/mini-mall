@@ -1,0 +1,19 @@
+<!--components/c-swiper/c-swiper.wxml-->
+<swiper class="swiper"
+        indicator-dots
+        indicator-color="#eee"
+        indicator-active-color="#ff5777"
+        autoplay
+        current="1"
+        interval="2000"
+        duration="500"
+        circular
+        vertical="{{false}}"
+        easing-function="default">
+  <block wx:for="{{ list }}" wx:key="index">
+    <swiper-item class="swiper-item">
+      <image class="swiper-img" src="{{ item.image }}"
+             mode="widthFix"></image>
+    </swiper-item>
+  </block>
+</swiper>

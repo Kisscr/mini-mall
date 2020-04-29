@@ -1,0 +1,8 @@
+/* pages/index/childCpns/c-popular/c-popular.wxss */
+.popular-week{
+  width: 750rpx;
+  overflow: hidden;
+}
+.popular-week .popular-img{
+  width: 752rpx;
+}

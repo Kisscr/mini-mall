@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<!-- 1. 展示轮播图 -->
+<c-swiper list="{{ banner }}" />
+
+<!-- 2. recommend部分 -->
+<c-recommend list="{{ recommend }}" bind:imageLoaded="handleTabFixed" />
+
+<!-- 3. 本周流行部分 -->
+<c-popular />
+
+<!-- 4. tab-contorl 部分 -->
+<c-tab-control list="{{ tabList }}" 
+               bind:getCurrentTab="getTabInfo"
+               id="tab-control"
+               class="{{ isFixed ? 'fixed' : '' }}"/>
+<c-tab-control list="{{ tabList }}" wx:if="{{ isFixed }}"/>
+
+
+<!-- 5. 商品展示部分 -->
+<c-goods goods="{{ goods[currentTab].list }}" />
+
+<!-- 6. 返回顶部部分 -->
+<c-back-top wx:if="{{ showBackTop }}" />

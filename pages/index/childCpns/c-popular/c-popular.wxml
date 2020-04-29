@@ -1,0 +1,6 @@
+<!--pages/index/childCpns/c-popular/c-popular.wxml-->
+<view class="popular-week">
+  <image src="/assets/home/popular_bg.jpg"
+         mode="widthFix"
+         class="popular-img"></image>
+</view>

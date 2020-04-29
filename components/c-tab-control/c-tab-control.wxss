@@ -1,0 +1,20 @@
+/* components/c-tab-control/c-tab-control.wxss */
+.tab-container{
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-bottom: 10rpx;
+  background-color: #fff;
+}
+.tab-container .tab-item{
+  flex: 1;
+  text-align: center;
+}
+.tab-container .tab-item .tab-title{
+  font-size: 28rpx;
+  padding: 18rpx 16rpx;
+}
+.tab-container .tab-item.active .tab-title{
+  color: #ff5777;
+  border-bottom: 3px solid #ff5777;
+} 

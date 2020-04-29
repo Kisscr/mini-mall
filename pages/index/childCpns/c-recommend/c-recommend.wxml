@@ -1,0 +1,9 @@
+<!--pages/index/childCpns/c-recommend/c-recommend.wxml-->
+<view class="rec-container" id="tab-control">
+  <block wx:for="{{ list }}" wx:key="index">
+    <view class="rec-item">
+      <image class="rec-img" src="{{ item.image }}" bindload="handleLoad"></image>
+      <view class="rec-title">{{ item.title }}</view>
+    </view>
+  </block>  
+</view>

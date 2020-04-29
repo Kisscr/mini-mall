@@ -1,0 +1,20 @@
+/* pages/index/childCpns/c-recommend/c-recommend.wxss */
+.rec-container {
+  display: flex;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 6rpx solid #eee;
+}
+
+.rec-container .rec-item {
+  flex: 1;
+  text-align: center;
+  color: #666;
+  font-size: 28rpx;
+}
+
+.rec-container .rec-item .rec-img {
+  width: 140rpx;
+  height: 140rpx;
+  margin-bottom: 10rpx;
+}

@@ -1,0 +1,13 @@
+/* components/c-goods/c-goods.wxss */
+.goods {
+  margin-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.goods-item {
+  width: 48%;
+  margin-bottom: 20rpx;
+  position: relative;
+  padding-bottom: 105rpx;
+}
