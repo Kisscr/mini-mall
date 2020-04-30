@@ -91,9 +91,16 @@ Page({
     this.setData({
       currentTab: tab[index]
     })
+  },
 
-    // 请求数据
-    this._getHomeGoods(currentTab)
+  // 图片加载完成后
+  handleTabFixed() {
+    // 获取tab栏的top值
+    wx.createSelectorQuery().select("#tab-control").boundingClientRect(rect => {
+      this.setData({
+        tabTop: rect.top
+      })
+    }).exec()
   },
 
   // 监听页面滚动到底部的事件函数
@@ -123,15 +130,7 @@ Page({
     }
   },
 
-  // 图片加载完成后
-  handleTabFixed() {
-    // 获取tab栏的top值
-    wx.createSelectorQuery().select("#tab-control").boundingClientRect(rect => {
-      this.setData({
-        tabTop: rect.top
-      })
-    }).exec()
-  },
+  
 
   // 分享转发回调函数
   onShareAppMessage: function () {
